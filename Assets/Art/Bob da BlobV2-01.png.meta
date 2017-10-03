@@ -1,0 +1,472 @@
+fileFormatVersion: 2
+guid: 8161b386d9f86584fbf5173eec33095e
+timeCreated: 1506641704
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Bob da BlobV2-01_0
+    21300002: Bob da BlobV2-01_1
+    21300004: Bob da BlobV2-01_2
+    21300006: Bob da BlobV2-01_3
+    21300008: Bob da BlobV2-01_4
+    21300010: Bob da BlobV2-01_5
+    21300012: Bob da BlobV2-01_6
+    21300014: Bob da BlobV2-01_7
+    21300016: Bob da BlobV2-01_8
+    21300018: Bob da BlobV2-01_9
+    21300020: Bob da BlobV2-01_10
+    21300022: Bob da BlobV2-01_11
+    21300024: Bob da BlobV2-01_12
+    21300026: Bob da BlobV2-01_13
+    21300028: Bob da BlobV2-01_14
+    21300030: Bob da BlobV2-01_15
+    21300032: Bob da BlobV2-01_16
+    21300034: Bob da BlobV2-01_17
+    21300036: Bob da BlobV2-01_18
+    21300038: Bob da BlobV2-01_19
+    21300040: Bob da BlobV2-01_20
+    21300042: Bob da BlobV2-01_21
+    21300044: Bob da BlobV2-01_22
+    21300046: Bob da BlobV2-01_23
+    21300048: Bob da BlobV2-01_24
+    21300050: Bob da BlobV2-01_25
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bob da BlobV2-01_0
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 3199
+        width: 263
+        height: 234
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bob da BlobV2-01_1
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 3192
+        width: 268
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bob da BlobV2-01_2
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 3192
+        width: 268
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bob da BlobV2-01_3
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 3165
+        width: 262
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bob da BlobV2-01_4
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 3072
+        width: 257
+        height: 361
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bob da BlobV2-01_5
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 3199
+        width: 267
+        height: 234
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bob da BlobV2-01_6
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 2903
+        width: 265
+        height: 236
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bob da BlobV2-01_7
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 2895
+        width: 267
+        height: 244
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bob da BlobV2-01_8
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 2895
+        width: 263
+        height: 244
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bob da BlobV2-01_9
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 2610
+        width: 295
+        height: 297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bob da BlobV2-01_10
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 2596
+        width: 258
+        height: 207
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bob da BlobV2-01_11
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 2645
+        width: 241
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bob da BlobV2-01_12
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 2647
+        width: 242
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bob da BlobV2-01_13
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 2679
+        width: 190
+        height: 164
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bob da BlobV2-01_14
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 2302
+        width: 96
+        height: 144
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bob da BlobV2-01_15
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 2305
+        width: 93
+        height: 210
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bob da BlobV2-01_16
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 2302
+        width: 94
+        height: 308
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bob da BlobV2-01_17
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 2339
+        width: 241
+        height: 238
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bob da BlobV2-01_18
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 2315
+        width: 270
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bob da BlobV2-01_19
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 1996
+        width: 322
+        height: 620
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bob da BlobV2-01_20
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 2007
+        width: 307
+        height: 206
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bob da BlobV2-01_21
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 2007
+        width: 303
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bob da BlobV2-01_22
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 993
+        width: 913
+        height: 907
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bob da BlobV2-01_23
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 205
+        width: 97
+        height: 270
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bob da BlobV2-01_24
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 205
+        width: 96
+        height: 411
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bob da BlobV2-01_25
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 205
+        width: 95
+        height: 599
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
