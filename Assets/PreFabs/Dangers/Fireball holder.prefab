@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 4199171521159718}
   - component: {fileID: 114888030174044456}
   - component: {fileID: 61117215712178390}
-  - component: {fileID: 114397911034705598}
+  - component: {fileID: 114989824920573256}
   m_Layer: 0
   m_Name: Fireball holder
   m_TagString: Untagged
@@ -57,8 +57,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1952005907001132}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -26.674006, y: -16.650398, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -8.221622, y: -4.632725, z: 0}
+  m_LocalScale: {x: 1.0315888, y: 1.0315888, z: 1.0315888}
   m_Children:
   - {fileID: 4292715861298658}
   m_Father: {fileID: 0}
@@ -124,7 +124,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -15.698214, y: -1.28228}
+  m_Offset: {x: -25.637417, y: -0.5490265}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -135,20 +135,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.4663582, y: 33.4067}
+  m_Size: {x: 1.0556717, y: 44.726646}
   m_EdgeRadius: 0
---- !u!114 &114397911034705598
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1952005907001132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e5c9649d55eb4c47aec1a583890ee08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifeTime: 15
 --- !u!114 &114584620148392462
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -198,6 +186,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theFlame: {fileID: 1934675808252670}
+--- !u!114 &114989824920573256
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1952005907001132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aee6fc995ca6144a57bf6ce5e685fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectDestroyPoint: {fileID: 0}
 --- !u!212 &212083456541439130
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -227,8 +227,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1345812179
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300036, guid: 8161b386d9f86584fbf5173eec33095e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4190128953786138}
   - component: {fileID: 212400125512591572}
   - component: {fileID: 114929679468478254}
-  - component: {fileID: 114772229448741574}
+  - component: {fileID: 114813205617681106}
   m_Layer: 0
   m_Name: Turret Top
   m_TagString: Untagged
@@ -51,7 +51,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1134376718503052}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.084806, y: -24.00314, z: 0}
+  m_LocalPosition: {x: 45.467503, y: -6.252164, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4863234213538346}
@@ -71,7 +71,7 @@ Transform:
   m_Father: {fileID: 4190128953786138}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114772229448741574
+--- !u!114 &114813205617681106
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -79,10 +79,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1134376718503052}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e5c9649d55eb4c47aec1a583890ee08, type: 3}
+  m_Script: {fileID: 11500000, guid: 82aee6fc995ca6144a57bf6ce5e685fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 15
+  objectDestroyPoint: {fileID: 0}
 --- !u!114 &114929679468478254
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -129,8 +129,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1345812179
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300020, guid: 8161b386d9f86584fbf5173eec33095e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

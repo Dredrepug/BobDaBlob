@@ -6,10 +6,11 @@ public class PlayerController : MonoBehaviour {
     public float moveSpeed;
 
     public float jumpForce;
-
+    public float boost;
+    public Boost theBoost;
     public float jumpTime;
     public float jumpTimeCounter;
-
+    private float startMoveSpeed;
     private Rigidbody2D myRiggidBody;
 
     public Transform groundCheck;
@@ -26,10 +27,11 @@ public class PlayerController : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-
+        startMoveSpeed = moveSpeed;
         myRiggidBody = GetComponent<Rigidbody2D>();
         myAnmin = GetComponent<Animator>();
         jumpTimeCounter = jumpTime;
+        theBoost = FindObjectOfType<Boost>();
     }
 
     // Update is called once per frame
@@ -39,7 +41,16 @@ public class PlayerController : MonoBehaviour {
     }
     void Update () {
         myRiggidBody.velocity = new Vector3(moveSpeed, myRiggidBody.velocity.y, 0);
-
+        if(Input.GetKeyDown(KeyCode.A) && isGrounded)
+            {
+            moveSpeed = moveSpeed * (1+boost);
+            theBoost.boostActive = true;
+            }
+        if (Input.GetKeyUp(KeyCode.A) || !isGrounded)
+            {
+            moveSpeed = startMoveSpeed;
+            theBoost.boostActive = false;
+        }
         if (Input.GetButtonDown("Jump") && isGrounded)
         {  
             jump = true;

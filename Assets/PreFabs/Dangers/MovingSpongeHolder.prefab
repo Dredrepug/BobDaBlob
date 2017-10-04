@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4631745841013860}
   - component: {fileID: 114711259816820558}
-  - component: {fileID: 114625133596617190}
+  - component: {fileID: 114490238919739182}
   m_Layer: 0
   m_Name: MovingSpongeHolder
   m_TagString: Untagged
@@ -122,7 +122,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1687752779085138}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.7169514, y: 19.87425, z: 10.842179}
+  m_LocalPosition: {x: 38.690536, y: -2.7381818, z: 10.842179}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4518833424811658}
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToGive: 1
---- !u!114 &114625133596617190
+--- !u!114 &114490238919739182
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -176,10 +176,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1687752779085138}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e5c9649d55eb4c47aec1a583890ee08, type: 3}
+  m_Script: {fileID: 11500000, guid: 82aee6fc995ca6144a57bf6ce5e685fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 15
+  objectDestroyPoint: {fileID: 0}
 --- !u!114 &114711259816820558
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -225,8 +225,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1345812179
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300038, guid: 8161b386d9f86584fbf5173eec33095e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
