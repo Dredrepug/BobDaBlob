@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Boost : MonoBehaviour {
+
     public bool boostActive;
-
-
     public Animator myAnim;
 
 	// Use this for initialization
