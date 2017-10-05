@@ -7,11 +7,11 @@ public class PlayerController : MonoBehaviour {
 
     public float jumpForce;
     public float boost;
+    public float slowDown;
     public Boost theBoost;
-    public float jumpTime;
-    public float jumpTimeCounter;
+
     private float startMoveSpeed;
-    private Rigidbody2D myRiggidBody;
+    public Rigidbody2D myRigidBody;
 
     public Transform groundCheck;
     public float groundCheckRadius;
@@ -24,14 +24,16 @@ public class PlayerController : MonoBehaviour {
     public float jumpTimer;
     public float jumpAnimTime;
 
+    public LvlManager theLevelManager;
+
 
     // Use this for initialization
     void Start () {
         startMoveSpeed = moveSpeed;
-        myRiggidBody = GetComponent<Rigidbody2D>();
+        myRigidBody = GetComponent<Rigidbody2D>();
         myAnmin = GetComponent<Animator>();
-        jumpTimeCounter = jumpTime;
         theBoost = FindObjectOfType<Boost>();
+        theLevelManager = FindObjectOfType<LvlManager>();
     }
 
     // Update is called once per frame
@@ -40,7 +42,7 @@ public class PlayerController : MonoBehaviour {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
     }
     void Update () {
-        myRiggidBody.velocity = new Vector3(moveSpeed, myRiggidBody.velocity.y, 0);
+        myRigidBody.velocity = new Vector3(moveSpeed, myRigidBody.velocity.y, 0);
         if(Input.GetKeyDown(KeyCode.A) && isGrounded)
             {
             moveSpeed = moveSpeed * (1+boost);
@@ -48,6 +50,19 @@ public class PlayerController : MonoBehaviour {
             }
         if (Input.GetKeyUp(KeyCode.A) || !isGrounded)
             {
+            moveSpeed = startMoveSpeed;
+            theBoost.boostActive = false;
+        }
+        if (Input.GetKeyDown(KeyCode.S) && isGrounded)
+        {
+            moveSpeed = moveSpeed * (1 - slowDown);
+        }
+        if (Input.GetKeyUp(KeyCode.S) || !isGrounded)
+        {
+            moveSpeed = startMoveSpeed;
+        }
+        if (Input.GetKeyDown(KeyCode.S) && Input.GetKeyDown(KeyCode.A))
+        {
             moveSpeed = startMoveSpeed;
             theBoost.boostActive = false;
         }
@@ -59,7 +74,7 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetButtonDown("Jump") && !isGrounded)
         {
 
-            myRiggidBody.gravityScale = -myRiggidBody.gravityScale;
+            myRigidBody.gravityScale = -myRigidBody.gravityScale;
             transform.localScale = new Vector3(transform.localScale.x, -transform.localScale.y, 0);
 
         }
@@ -73,17 +88,19 @@ public class PlayerController : MonoBehaviour {
             jump = false;
         }
 
-        myAnmin.SetFloat("Speed", myRiggidBody.velocity.x);
+        myAnmin.SetFloat("Speed", myRigidBody.velocity.x);
         myAnmin.SetBool("Grounded", isGrounded);
         myAnmin.SetBool("Jump", jump);
     }
+    
     public IEnumerator jumpMove()
 
     {
         yield return new WaitForSeconds(jumpAnimTime);
         if(transform.localScale.y >0)
-        myRiggidBody.velocity = new Vector3(myRiggidBody.velocity.x, jumpForce, 0f);
+            myRigidBody.velocity = new Vector3(myRigidBody.velocity.x, jumpForce, 0f);
         if (transform.localScale.y < 0)
-            myRiggidBody.velocity = new Vector3(myRiggidBody.velocity.x, -jumpForce, 0f);
+            myRigidBody.velocity = new Vector3(myRigidBody.velocity.x, -jumpForce, 0f);
     }
+    
 }
