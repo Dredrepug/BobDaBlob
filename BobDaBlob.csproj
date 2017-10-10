@@ -94,6 +94,7 @@
     <Compile Include="Assets\Scripts\ObjectDestroyer.cs" />
     <Compile Include="Assets\Scripts\ObjecteGen.cs" />
     <Compile Include="Assets\Scripts\ObjectPooler.cs" />
+    <Compile Include="Assets\Scripts\PickUpCoin.cs" />
     <Compile Include="Assets\Scripts\PlatformGen.cs" />
     <Compile Include="Assets\Scripts\PlatofrmDestoryer.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
