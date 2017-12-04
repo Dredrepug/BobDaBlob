@@ -25,6 +25,8 @@ GameObject:
   - component: {fileID: 50517374962504918}
   - component: {fileID: 58508351674633962}
   - component: {fileID: 114632059848646660}
+  - component: {fileID: 114882442482263910}
+  - component: {fileID: 82281165239926758}
   m_Layer: 0
   m_Name: Flying FireBall
   m_TagString: Untagged
@@ -40,7 +42,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4199171521159718}
-  - component: {fileID: 114888030174044456}
   - component: {fileID: 61117215712178390}
   - component: {fileID: 114989824920573256}
   m_Layer: 0
@@ -137,6 +138,87 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0556717, y: 44.726646}
   m_EdgeRadius: 0
+--- !u!82 &82281165239926758
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1934675808252670}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: d87c6155ccf9c48e3951dbc25e6a674e,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: fdb79c14343d041c5ae80246b3c601db, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 0
+  MinDistance: 1
+  MaxDistance: 16
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0.5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &114584620148392462
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -174,18 +256,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
---- !u!114 &114888030174044456
+--- !u!114 &114882442482263910
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1952005907001132}
+  m_GameObject: {fileID: 1934675808252670}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7584663a70c5316409ed9fca70f01f15, type: 3}
+  m_Script: {fileID: 11500000, guid: ce1afb6e762d44226b4437e4152e0e45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theFlame: {fileID: 1934675808252670}
+  TheFireball: {fileID: 1934675808252670}
+  FireballSound: {fileID: 0}
+  FireballSprite: {fileID: 0}
+  lowPitchRange: 0.8
+  highPitchRange: 1.2
+  randomPitch: 0
 --- !u!114 &114989824920573256
 MonoBehaviour:
   m_ObjectHideFlags: 1

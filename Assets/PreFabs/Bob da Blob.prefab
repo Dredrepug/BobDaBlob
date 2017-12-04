@@ -201,6 +201,14 @@ MonoBehaviour:
   jumpTimer: 0
   jumpAnimTime: 0.1
   theLevelManager: {fileID: 0}
+  IncreaseSpeedRate: 0
+  IncreaseSpeedFrequency: 0
+  OriginalMoveSpeed: 0
+  Jumps:
+  - {fileID: 8300000, guid: 7b6d0b75f31494357ab7becc417cc201, type: 3}
+  - {fileID: 8300000, guid: 3628165f2c48e4e3598e8da5add1e715, type: 3}
+  - {fileID: 8300000, guid: d63a52262fea84bae83cb4a5e5da2522, type: 3}
+  - {fileID: 8300000, guid: c4b8dda48436a42e4a669e1d3395e396, type: 3}
 --- !u!114 &114519525634971642
 MonoBehaviour:
   m_ObjectHideFlags: 1

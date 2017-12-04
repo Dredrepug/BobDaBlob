@@ -12,12 +12,22 @@ public class MovingObject : MonoBehaviour {
 
     public float speedMin;
     public float speedMax;
+	public AudioSource SpongeSound;
+	public SpriteRenderer SpongeSprite;
+	private bool SpongeVisibility;
+	public float lowPitchRange = .8f;	
+	public float highPitchRange = 1.2f;
+	public float randomPitch;
 
     // Use this for initialization
 
     void Start()
     {
         currentTarget = endPoint.position;
+		SpongeSprite = GetComponentInChildren<SpriteRenderer> ();
+		SpongeSound = GetComponent<AudioSource>();
+		randomPitch = Random.Range(lowPitchRange, highPitchRange);
+
     }
 
     // Update is called once per frame
@@ -36,5 +46,13 @@ public class MovingObject : MonoBehaviour {
         {
             currentTarget = endPoint.position;
         }
+
+		if (SpongeSprite.isVisible && SpongeVisibility == false) {
+			SpongeSound.pitch = randomPitch;
+			SpongeSound.Play();
+			SpongeVisibility = true;
+		}
+
+
     }
 }

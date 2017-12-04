@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Sponge
   - Coin
+  - SpeedRate
+  - SpeedFrequency
+  - OriginalMoveSpeed
+  - StartingRound
+  - TimeBetweenRounds
   layers:
   - Default
   - TransparentFX

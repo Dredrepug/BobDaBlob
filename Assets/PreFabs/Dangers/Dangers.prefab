@@ -82,23 +82,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   genPoint: {fileID: 0}
   distanceBetween: 0
-  distanceBewtweenMin: 10
-  distancebetweenMax: 20
-  yMax: 0
-  ymin: 0
-  element1Pos: -4.1
-  element2Pos: 4.3
-  element3Pos: -4.3
-  element4Pos: 4.4
-  element5Pos: -2.3
-  element6Pos: -3.9
-  element7Pos: 4.1
+  distanceBewtweenMin: 7
+  distancebetweenMax: 12
+  yMax: 3
+  ymin: -3
+  TurretBottomPos: -4.2
+  TurretTopPos: 4.4
+  FlameHolderBottomPos: -4.3
+  FlameHolderTopPos: 4.4
+  Buzzsaw1Pos: -4
+  Buzzsaw2Pos: 4.1
+  FireballPos: 0
+  SpongePos: -2.3
   theDangers:
-  - {fileID: 1952005907001132, guid: 189106b7906c61d4bac05c69882e98b1, type: 2}
   - {fileID: 1493921980042810, guid: a03bf11dead267043b5d0f4465c31be6, type: 2}
   - {fileID: 1134376718503052, guid: f375c9f7749bdce46bbe0f907628118a, type: 2}
   - {fileID: 1720758988057502, guid: b998d407d6bd5e246b389a56f2fe1377, type: 2}
   - {fileID: 1083417934559160, guid: ecf497e09e938904bb4b85fcc47faac4, type: 2}
+  - {fileID: 1291261900334982, guid: 9e72b2fe47667d04f8a46dd82c3e43bd, type: 2}
+  - {fileID: 1291261900334982, guid: 9e72b2fe47667d04f8a46dd82c3e43bd, type: 2}
+  - {fileID: 1952005907001132, guid: 189106b7906c61d4bac05c69882e98b1, type: 2}
   - {fileID: 1687752779085138, guid: 0b2dc70e7c8572747a778a318c859943, type: 2}
-  - {fileID: 1291261900334982, guid: 9e72b2fe47667d04f8a46dd82c3e43bd, type: 2}
-  - {fileID: 1291261900334982, guid: 9e72b2fe47667d04f8a46dd82c3e43bd, type: 2}
+  StartingRound: 4
+  TimeBetweenRounds: 15

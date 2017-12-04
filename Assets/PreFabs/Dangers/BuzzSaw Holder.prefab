@@ -19,8 +19,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4762666603157812}
-  - component: {fileID: 114684582524036200}
   - component: {fileID: 114548891421267282}
+  - component: {fileID: 50932342735098120}
+  - component: {fileID: 61913110099281470}
   m_Layer: 0
   m_Name: BuzzSaw Holder
   m_TagString: Untagged
@@ -72,6 +73,7 @@ GameObject:
   - component: {fileID: 95942739535197894}
   - component: {fileID: 58102159159323780}
   - component: {fileID: 114275669076706446}
+  - component: {fileID: 82238325744718038}
   m_Layer: 0
   m_Name: Buzzsaw
   m_TagString: Untagged
@@ -125,7 +127,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1291261900334982}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.74, y: -14.59, z: 0.46294314}
+  m_LocalPosition: {x: -1.8, y: -7.83, z: 0.46294314}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4092527766671084}
@@ -154,6 +156,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!50 &50932342735098120
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1291261900334982}
+  m_BodyType: 0
+  m_Simulated: 0
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!58 &58102159159323780
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -169,6 +191,112 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.32
+--- !u!61 &61913110099281470
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1291261900334982}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 1
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!82 &82238325744718038
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1744234862753712}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: d87c6155ccf9c48e3951dbc25e6a674e,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 0cff82d60ed9542f397381301b268e73, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 0
+  MinDistance: 1
+  MaxDistance: 15
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0.5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &95942739535197894
 Animator:
   serializedVersion: 3
@@ -202,6 +330,11 @@ MonoBehaviour:
   moveSpeed: 5
   scaleX: 1
   scaleY: 1
+  BuzzsawSound: {fileID: 0}
+  BuzzsawSprite: {fileID: 0}
+  lowPitchRange: 0.8
+  highPitchRange: 1.2
+  randomPitch: 0
   movingRight: 0
 --- !u!114 &114275669076706446
 MonoBehaviour:
@@ -227,23 +360,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectDestroyPoint: {fileID: 0}
---- !u!114 &114684582524036200
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1291261900334982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63b1eec268643654e8ea7d4b5c981409, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftPoint: {fileID: 4509063175590822}
-  rightPoint: {fileID: 4182790775069692}
-  moveSpeed: 3
-  scaleX: 1
-  scaleY: 1
-  movingRight: 0
 --- !u!212 &212845451271771506
 SpriteRenderer:
   m_ObjectHideFlags: 1

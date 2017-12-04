@@ -39,10 +39,14 @@ public class LvlManager : MonoBehaviour
 
     private ObjectDestroyer[] objectList;
 
+	public AudioClip[] Deaths;
+
+
 
     // Use this for initialization
     void Start()
     {
+
         thePlayer = FindObjectOfType<PlayerController>();
 
         death.gameObject.SetActive(true);
@@ -62,6 +66,8 @@ public class LvlManager : MonoBehaviour
         playerStartPoint = thePlayer.transform.position;
         playerStartScale = 0.5f;
         playerGravity = 2;
+		theScoreManager.scoreCount = 0;
+
     }
 
     // Update is called once per frame
@@ -70,6 +76,8 @@ public class LvlManager : MonoBehaviour
         if (healthCount <= 0)
         {
             RestartGame();
+			healthCount = 1;
+			ObjecteGen.RoundNumber = 0;
         }
     }
     public void RestartGame()
@@ -84,12 +92,18 @@ public class LvlManager : MonoBehaviour
     }
     public IEnumerator RestartGameCo()
     {
-        theScoreManager.scoreIncreasing = false;
+		thePlayer.moveSpeed = thePlayer.OriginalMoveSpeed;
+
+
+		theScoreManager.scoreIncreasing = false;
         thePlayer.gameObject.SetActive(false);
         Instantiate(death, thePlayer.transform.position, thePlayer.transform.rotation);
-        Destroy(death.gameObject);
+        //Destroy(death.gameObject);
         playerDead = true;
         //theBoost.boostActive =false;
+
+		int RandomIndex = Random.Range (0, Deaths.Length);
+		SoundManager.instance.PlaySingle (Deaths [RandomIndex]);
 
         yield return new WaitForSeconds(timeToReset);
 
@@ -124,6 +138,9 @@ public class LvlManager : MonoBehaviour
         death.gameObject.SetActive(true);
         theScoreManager.scoreCount = 0;
         theScoreManager.scoreIncreasing = true;
+
+		thePlayer.StopCoroutine ("IncreaseSpeed");
+		thePlayer.StartCoroutine ("IncreaseSpeed");
 
     }
 }

@@ -19,8 +19,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4631745841013860}
-  - component: {fileID: 114711259816820558}
   - component: {fileID: 114490238919739182}
+  - component: {fileID: 61565741454423462}
   m_Layer: 0
   m_Name: MovingSpongeHolder
   m_TagString: Untagged
@@ -39,6 +39,8 @@ GameObject:
   - component: {fileID: 212678403642079788}
   - component: {fileID: 61632028358208912}
   - component: {fileID: 114115720933491156}
+  - component: {fileID: 114832524287198774}
+  - component: {fileID: 82134093062730806}
   m_Layer: 0
   m_Name: MovingSponge
   m_TagString: Untagged
@@ -122,7 +124,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1687752779085138}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 38.690536, y: -2.7381818, z: 10.842179}
+  m_LocalPosition: {x: -14.961321, y: 9.651458, z: 10.842179}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4518833424811658}
@@ -131,6 +133,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &61565741454423462
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1687752779085138}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!61 &61632028358208912
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -156,6 +183,87 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.22, y: 6.2}
   m_EdgeRadius: 0
+--- !u!82 &82134093062730806
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1802237228878376}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: d87c6155ccf9c48e3951dbc25e6a674e,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 76bd33a8d346c452fa6ae6a92bf9763e, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 0
+  MinDistance: 1
+  MaxDistance: 10
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0.5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &114115720933491156
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -180,12 +288,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectDestroyPoint: {fileID: 0}
---- !u!114 &114711259816820558
+--- !u!114 &114832524287198774
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1687752779085138}
+  m_GameObject: {fileID: 1802237228878376}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3025dfb6a9e88d4d8233261c911de84, type: 3}
@@ -196,6 +304,11 @@ MonoBehaviour:
   endPoint: {fileID: 4192889599407330}
   speedMin: 3
   speedMax: 6
+  SpongeSound: {fileID: 0}
+  SpongeSprite: {fileID: 0}
+  lowPitchRange: 0.8
+  highPitchRange: 1.2
+  randomPitch: 0
 --- !u!212 &212678403642079788
 SpriteRenderer:
   m_ObjectHideFlags: 1

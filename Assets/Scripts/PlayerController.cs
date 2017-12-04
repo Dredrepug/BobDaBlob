@@ -26,15 +26,33 @@ public class PlayerController : MonoBehaviour {
 
     public LvlManager theLevelManager;
 
+	public float IncreaseSpeedRate;
+	public float IncreaseSpeedFrequency;
+	public float OriginalMoveSpeed;
+
+	public AudioClip[] Jumps;
+
+
 
     // Use this for initialization
     void Start () {
-        startMoveSpeed = moveSpeed;
+		
+		//moveSpeed = OriginalMoveSpeed;
+
+		moveSpeed = DebugInfo.OriginalMoveSpeed;
+		IncreaseSpeedFrequency = DebugInfo.SpeedFrequency;
+		IncreaseSpeedRate = DebugInfo.SpeedRate;
+
+
+		//startMoveSpeed = moveSpeed;
         myRigidBody = GetComponent<Rigidbody2D>();
         myAnmin = GetComponent<Animator>();
         theBoost = FindObjectOfType<Boost>();
         theLevelManager = FindObjectOfType<LvlManager>();
+
+		StartCoroutine ("IncreaseSpeed");
     }
+		
 
     // Update is called once per frame
     private void FixedUpdate()
@@ -50,7 +68,7 @@ public class PlayerController : MonoBehaviour {
             }
         if (Input.GetKeyUp(KeyCode.A) || !isGrounded)
             {
-            moveSpeed = startMoveSpeed;
+           // moveSpeed = startMoveSpeed;
             theBoost.boostActive = false;
         }
         if (Input.GetKeyDown(KeyCode.S) && isGrounded)
@@ -59,24 +77,27 @@ public class PlayerController : MonoBehaviour {
         }
         if (Input.GetKeyUp(KeyCode.S) || !isGrounded)
         {
-            moveSpeed = startMoveSpeed;
+            //moveSpeed = startMoveSpeed;
         }
         if (Input.GetKeyDown(KeyCode.S) && Input.GetKeyDown(KeyCode.A))
         {
-            moveSpeed = startMoveSpeed;
+            //moveSpeed = startMoveSpeed;
             theBoost.boostActive = false;
         }
         if (Input.GetButtonDown("Jump") && isGrounded)
         {  
             jump = true;
             StartCoroutine("jumpMove");
+			int RandomIndex = Random.Range (0, Jumps.Length);
+			SoundManager.instance.PlaySingle (Jumps [RandomIndex]);
         }
         if (Input.GetButtonDown("Jump") && !isGrounded)
         {
 
             myRigidBody.gravityScale = -myRigidBody.gravityScale;
             transform.localScale = new Vector3(transform.localScale.x, -transform.localScale.y, 0);
-
+			int RandomIndex = Random.Range (0, Jumps.Length);
+			SoundManager.instance.PlaySingle (Jumps [RandomIndex]);
         }
 
         if (Input.GetButtonUp("Jump"))
@@ -91,6 +112,8 @@ public class PlayerController : MonoBehaviour {
         myAnmin.SetFloat("Speed", myRigidBody.velocity.x);
         myAnmin.SetBool("Grounded", isGrounded);
         myAnmin.SetBool("Jump", jump);
+
+
     }
     
     public IEnumerator jumpMove()
@@ -102,5 +125,13 @@ public class PlayerController : MonoBehaviour {
         if (transform.localScale.y < 0)
             myRigidBody.velocity = new Vector3(myRigidBody.velocity.x, -jumpForce, 0f);
     }
+
+	public IEnumerator IncreaseSpeed()
+
+	{
+		yield return new WaitForSeconds(IncreaseSpeedFrequency);
+		moveSpeed = moveSpeed * IncreaseSpeedRate;
+		StartCoroutine ("IncreaseSpeed");
+	}
     
 }

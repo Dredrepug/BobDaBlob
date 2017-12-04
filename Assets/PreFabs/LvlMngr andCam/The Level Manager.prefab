@@ -51,8 +51,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 269f7324f76b878479ff63d89428b153, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  platformBottomGenerator: {fileID: 0}
+  platformTopGenerator: {fileID: 0}
+  backgroundGenerator: {fileID: 0}
+  objectGenerator: {fileID: 0}
+  timeToReset: 1
+  playerGravity: 0
   maxHealth: 1
   healthCount: 0
   death: {fileID: 1779661089282766, guid: c23cc8d4fc2ecaf409e83017e461b893, type: 2}
   thePlayer: {fileID: 0}
   playerDead: 0
+  SoundManager: {fileID: 0}

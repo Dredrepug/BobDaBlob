@@ -21,6 +21,10 @@ public class ControlAspectRatio : MonoBehaviour
         // obtain camera component so we can modify its viewport
         Camera camera = GetComponent<Camera>();
 
+		print (scaleheight);
+		print (windowaspect);
+		print (targetaspect);
+
         // if scaled height is less than current height, add letterbox
         if (scaleheight < 1.0f)
         {

@@ -8,6 +8,11 @@ public class FireShot : MonoBehaviour
     public float speed;
     public PlayerController thePlayer;
     private Rigidbody2D myRigidbody;
+	public AudioClip[] Fireshots;
+	public AudioSource FireshotSound;
+	public float lowPitchRange = .8f;	
+	public float highPitchRange = 1.2f;
+	public float randomPitch;
 
 
     // Use this for initialization
@@ -15,6 +20,14 @@ public class FireShot : MonoBehaviour
     {
         thePlayer = FindObjectOfType<PlayerController>();
         myRigidbody = GetComponent<Rigidbody2D>();
+		FireshotSound = GetComponent<AudioSource>();
+		randomPitch = Random.Range(lowPitchRange, highPitchRange);
+		int RandomIndex = Random.Range (0, Fireshots.Length);
+		FireshotSound.clip = Fireshots [RandomIndex];
+		FireshotSound.pitch = randomPitch;
+		FireshotSound.Play();
+
+
 
         if (thePlayer.transform.position.x < transform.position.x)
         {
